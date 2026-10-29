@@ -1,16 +1,13 @@
-public class test{
-	public static void main(String... args){
-        
-      int input = 5;
-      int output = factorial(input);
-      System.out.println(output);
-      
-	}
-   public static int factorial(int n){
-      if (n == 1){
-         return 1;
-      }
-      return n * factorial(n-1);
-   }
-}
+public class test {
+  public static void main(String... args) {
 
+    int[] arr = new int[] { 1, 2, 3, 4, 5 };
+    for (int i = 0; i < arr.length - 1; i += 2) {
+      System.out.println("every second element: " + arr[i + 1]);
+    }
+    for (int i = arr.length - 1; i >= 0; i--) {
+      System.out.println("the array backwards: " + arr[i]);
+    }
+
+  }
+}
